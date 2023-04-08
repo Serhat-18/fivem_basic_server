@@ -48,6 +48,12 @@ AddEventHandler('status', function()
 end)
 
 
+-- "aktiflist" komutu geldiğinde aktif oyuncuları listeleme
+AddEventHandler('aktiflist', function()
+    ListPlayers()
+end)
+
+
 
 -- "dm" komutu geldiğinde DM gönderme fonksiyonu
 RegisterCommand('dm', function(source, args, rawCommand)
